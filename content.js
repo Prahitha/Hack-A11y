@@ -45,7 +45,7 @@ function analyzeImage(){
 
 //function that converts the result from CV API into speech
 function textToSpeech(analyzeResult){
-	var apiKey = "200b9fc16df4481384c6dbeeb3ea79df";
+	var apiKey = ""; //add your key here
 	var params = {};
 	var tokenURL = 'https://oxford-speech.cloudapp.net/token/issueToken';
 	var audioURL = "https://speech.platform.bing.com/synthesize";
