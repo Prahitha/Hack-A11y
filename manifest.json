@@ -1,0 +1,28 @@
+{
+  "manifest_version" : 2,
+  "name": "Accessible Fashion",
+  "description": "This extension describes the images for people who are visually impaired.",
+  "version" : "0.2",
+  
+	"background": {
+		"scripts": ["eventPage.js"],
+		"persistent": false
+	},
+
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/"
+  ],
+  
+  "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["jquery.js", "content.js"],
+    "run_at": "document_start"
+  }]
+}
