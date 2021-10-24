@@ -60,7 +60,7 @@ function textToSpeech(analyzeResult){
 	$.ajax({
 		url: "https://api.cognitive.microsoft.com/sts/v1.0/issueToken?" + $.param(params),
 		beforeSend: function(xhrObj){
-			xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","200b9fc16df4481384c6dbeeb3ea79df");
+			xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","subscriptionKey");
 		},
 
 		type: "POST",
